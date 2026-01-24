@@ -1,6 +1,8 @@
-*{box-sizing:border-box;
-  width:1280px;
-  text-align: center;}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body{background-image: url(../css/img/surface-abstraite-et-textures-de-mur-de-pierre-de-beton-blanc.jpg);
       background-repeat: no-repeat;
@@ -9,7 +11,12 @@ body{background-image: url(../css/img/surface-abstraite-et-textures-de-mur-de-pi
       background-position:top left;}  
 
 h1{color:darkblue;
-   text-decoration: underline;}
+   text-decoration: underline;
+   text-align: center;}
+
+a{color:darkblue;
+   text-decoration: underline;
+   text-align: center;}   
 
 img{width:350px;
     height:350px;
