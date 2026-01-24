@@ -1,4 +1,4 @@
-// ===== LIGHTBOX =====
+// LIGHTBOX
 const images = document.querySelectorAll('.gallery img');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
@@ -11,12 +11,13 @@ images.forEach(img => {
   });
 });
 
-closeBtn.addEventListener('click', () => {
-  lightbox.style.display = 'none';
-});
+if (closeBtn) {
+  closeBtn.addEventListener('click', () => {
+    lightbox.style.display = 'none';
+  });
+}
 
-
-// ===== FORMULAIRE (FORMSPREE) =====
+// FORMULAIRE
 const form = document.getElementById("contact-form");
 
 if (form) {
@@ -39,3 +40,4 @@ if (form) {
     }
   });
 }
+
