@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RTMF Menuiserie | Menuisier PVC, Alu & Bois</title>
+
+    <meta name="description" content="RTMF Menuiserie, entreprise familiale spécialisée dans la pose de menuiseries PVC, aluminium et bois. Devis gratuit.">
+    <meta name="robots" content="index, follow">
+
+    <!-- SEO Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RTMF Menuiserie",
+      "telephone": "+33611281793",
+      "email": "contact@rtmf.fr",
+      "address": {
+        "@type": "vedene,vaucluse",
+        "paca,gard,vaucluse": "FR"
+      }
+    }
+    </script>
+
+    <link rel="stylesheet" href="./assets/css/index.css">
+</head>
+
+<body>
+
+<header class="header">
+    <img src="./Image/RTMF.png" alt="Logo RTMF Menuiserie">
+    <h1>RTMF Menuiserie</h1>
+    <p>Menuiseries PVC · Aluminium · Bois</p>
+    
+</header>
+
+<nav class="menu">
+    <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="./realisation.html">Réalisations</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>Qui sommes-nous</h2>
+    <p>
+        RTMF Menuiserie est une entreprise familiale père et fils avec plus de
+        <strong>30 ans d’expérience</strong> dans la pose de menuiseries.
+    </p>
+    <p>
+        Nous intervenons pour vos fenêtres, portes, volets, vérandas,
+        pergolas et moustiquaires, avec une priorité : la satisfaction client.
+    </p>
+</section>
+
+<section id="realisations">
+    <h2>Nos réalisations</h2>
+    <p>Découvrez quelques-uns de nos chantiers récents.</p>
+    <a href="./realisation.html" class="btn">Voir les réalisations</a>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <ul class="contact">
+        <li>📧 <a href="mailto:contact@rtmf.fr">contact@rtmf.fr</a></li>
+        <li>📞 <a href="tel:+33611281793">06 11 28 17 93</a></li>
+    </ul>
+
+    <form class="contact-form" action="send.php" method="POST">
+    <!-- Honeypot anti-spam -->
+    <input type="text" name="website" style="display:none">
+
+    <input type="text" name="name" placeholder="Nom" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="phone" placeholder="Tel" required>
+    <textarea name="message" placeholder="Votre message" required></textarea>
+
+    <label class="rgpd">
+        <input type="checkbox" required>
+        J’accepte que mes données soient utilisées pour être recontacté.
+    </label>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+</section>
+
+</main>
+
+<footer>
+    <small>© 2024 RTMF Menuiserie – Tous droits réservés</small>
+</footer>
+
+</body>
+</html>

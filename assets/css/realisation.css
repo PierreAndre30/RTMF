@@ -1,0 +1,25 @@
+*{box-sizing:border-box;
+  width:1280px;
+  text-align: center;}
+
+body{background-image: url(../css/img/surface-abstraite-et-textures-de-mur-de-pierre-de-beton-blanc.jpg);
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      background-position:top left;}  
+
+h1{color:darkblue;
+   text-decoration: underline;}
+
+img{width:350px;
+    height:350px;
+    margin:5px;
+    border:2px solid darkblue;
+    border-radius: 100px;}
+
+footer{
+    background: darkblue;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}   
