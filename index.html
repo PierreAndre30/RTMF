@@ -71,9 +71,10 @@
         <li>📞 <a href="tel:+33611281793">06 11 28 17 93</a></li>
     </ul>
 
-    <form class="contact-form" action="send.php" method="POST">
+    <form class="contact-form" action="https://formspree.io/f/xnjporez" method="POST">
     <!-- Honeypot anti-spam -->
-    <input type="text" name="website" style="display:none">
+    <input type="text" name="website" style="display:none" autocomplete="off">
+
 
     <input type="text" name="name" placeholder="Nom" required>
     <input type="email" name="email" placeholder="Email" required>
@@ -81,7 +82,7 @@
     <textarea name="message" placeholder="Votre message" required></textarea>
 
     <label class="rgpd">
-        <input type="checkbox" required>
+        <input type="checkbox" name="rgpd" required>>
         J’accepte que mes données soient utilisées pour être recontacté.
     </label>
 
