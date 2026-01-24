@@ -2,6 +2,8 @@ const images = document.querySelectorAll('.gallery img');
 const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 const closeBtn = document.querySelector('.close');
+const form = document.getElementById("contact-form");
+
 
 images.forEach(img => {
     img.addEventListener('click', () => {
