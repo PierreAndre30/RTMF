@@ -10,19 +10,25 @@
     <meta name="robots" content="index, follow">
 
     <!-- SEO Local -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "RTMF Menuiserie",
-      "telephone": "+33611281793",
-      "email": "contact@rtmf.fr",
-      "address": {
-        "@type": "vedene,vaucluse",
-        "paca,gard,vaucluse": "FR"
-      }
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "RTMF Menuiserie",
+  "image": "https://www.tonsite.fr/image/RTMF.png",
+  "telephone": "+33611281793",
+  "email": "contact@rtmf.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Vedène",
+    "addressRegion": "Provence-Alpes-Côte d'Azur",
+    "postalCode": "84270",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Vaucluse", "Gard", "Région PACA"]
+}
+</script>
+
 
     <link rel="stylesheet" href="./assets/css/index.css">
 </head>
@@ -30,10 +36,24 @@
 <body>
 
 <header class="header">
-    <img src="image/RTMF.png" alt="Logo RTMF Menuiserie">
+
+    <img src="image/RTMF.png" alt="Logo RTMF Menuiserie" class="logo">
+
     <h1>RTMF Menuiserie</h1>
-    <p>Menuiseries PVC · Aluminium · Bois</p>    
+    <p>Menuiseries PVC · Aluminium</p>
+
+    <div class="social-header">
+        <a href="#" target="_blank" aria-label="Facebook RTMF Menuiserie">
+            <img src="image/facebook.png" alt="Facebook">
+        </a>
+
+        <a href="#" target="_blank" aria-label="Instagram RTMF Menuiserie">
+            <img src="image/instagram.png" alt="Instagram">
+        </a>
+    </div>
+
 </header>
+
 
 <nav class="menu">
     <ul>
@@ -63,6 +83,40 @@
     <a href="./realisation.html" class="btn">Voir les réalisations</a>
 </section>
 
+<section id="partenaires">
+    <h2>Nos partenaires</h2>
+
+    <div class="partenaires-grid">
+
+        <a href="#" target="_blank" class="partenaire-card">
+            <h3>MF VISTA</h3>
+            <p>Fabricant de menuiseries PVC et aluminium sur mesure.</p>
+        </a>
+
+        <a href="#" target="_blank" class="partenaire-card">
+            <h3>COSWEE</h3>
+            <p>Solutions de pergolas, stores et moustiquaires.</p>
+        </a>
+
+        <a href="#" target="_blank" class="partenaire-card">
+            <h3>WÜRTH</h3>
+            <p>Fournisseur de visserie et fixations professionnelles.</p>
+        </a>
+
+        <a href="#" target="_blank" class="partenaire-card">
+            <h3>LEGALLAIS</h3>
+            <p>Quincaillerie et consommable pour le bâtiment.</p>
+        </a>
+
+        <a href="#" target="_blank" class="partenaire-card">
+            <h3>HILTI</h3>
+            <p>Outillage électroportatif professionnel.</p>
+        </a>
+
+    </div>
+</section>
+
+
 <section id="contact">
     <h2>Contact</h2>
 
@@ -87,7 +141,8 @@
     </label>
 
     <button type="submit">Envoyer</button>
-</form>
+
+    </form>
 
 </section>
 
@@ -95,8 +150,9 @@
 
 <footer>
     
-    <small>© 2024 RTMF Menuiserie – Tous droits réservés</small>
+    <small>© 2025 RTMF Menuiserie – Tous droits réservés</small>
     <a href="mentions-legales.html">Mentions légales</a>
+
 </footer>
 
 <script src="./assets/js/main.js"></script>

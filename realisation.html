@@ -10,32 +10,41 @@
     <meta name="robots" content="index, follow">
 
     <!-- SEO Local -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "RTMF Menuiserie",
-      "telephone": "+33611281793",
-      "email": "contact@rtmf.fr",
-      "address": {
-        "@type": "vedene,vaucluse",
-        "paca,gard,vaucluse": "FR"
-      }
-    }
-    </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "RTMF Menuiserie",
+  "telephone": "+33611281793",
+  "email": "contact@rtmf.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Vedène",
+    "addressRegion": "Provence-Alpes-Côte d'Azur",
+    "postalCode": "84270",
+    "addressCountry": "FR"
+  },
+  "areaServed": ["Vaucluse", "Gard", "Région PACA"]
+}
+</script>
 
     <link rel="stylesheet" href="./assets//css/realisation.css">
 </head>
-    <header>
-        <h1>Mes réalisations:</h1>
-    </header>
+
 <body>
+    <header>
+        <h1>Nos réalisations en menuiserie</h1>
+        <p class="intro-realisations">
+Découvrez quelques exemples de nos chantiers en menuiserie PVC, aluminium.
+</p>
+    </header>
+
     <div class="zoom-image">
         <img src="image/baie-vitre-noir.jpg" alt="baie vitre noir" title="baie vitrée noir rénovation" loading="lazy">
         <img src="image/moustiquaire-noir.jpg" alt="moustiquaire noir" title="moustiquaire noir sur baie vitrée noir" loading="lazy">
         <img src="image/fenetre-noir.jpg" alt="fenetre noir rénovation" title="fenêtre noir rénovation" loading="lazy">
         <img src="image/volet-roulant-solaire-noir.jpg" alt="volet roulant noir solaire" title="volet roulant noir solaire" loading="lazy">
-        <img src="image/porte-garage-noir.jpg" alt="porte de garage noir" titre="porte de garage noir" loading="lazy">
+        <img src="image/porte-garage-noir.jpg" alt="porte de garage noir" title="porte de garage noir" loading="lazy">
         <img src="image/porte-garage.jpg" alt="porte de garage noir renovation" title="porte de garage noir sectionelle" loading="lazy">
         <img src="image/Baie-noir.jpg" alt="baie vitre noir" title="baie vitre noir" loading="lazy">
         <img src="image/Lot-porte.jpg" alt="Diaporama porte" title="Diaporama porte" loading="lazy">
@@ -45,16 +54,20 @@
         <img src="image/fenetre-renovation.jpg" alt="fenetre renovation" title="fenetre renovation" loading="lazy">
     </div>
 
- <a href="index.html">Retour à la page d'accueil</a> 
+<a href="index.html" class="btn-retour">Retour à la page d'accueil</a>
 
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-img" src="" alt="Agrandissement image réalisation">
+</div>
 
 <script src="./assets/js/main.js"></script>
 
-
 <footer>
-    <small>© 2024 RTMF Menuiserie – Tous droits réservés</small>
+    <small>© 2025 RTMF Menuiserie – Tous droits réservés</small>
     <a href="mentions-legales.html">Mentions légales</a>
 </footer>
+
 
 </body>
 </html>

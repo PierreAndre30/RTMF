@@ -1,40 +1,131 @@
+/* RESET */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{background-image: url(../css/img/surface-abstraite-et-textures-de-mur-de-pierre-de-beton-blanc.jpg);
-      background-repeat: no-repeat;
-      background-size:cover;
-      background-attachment: fixed;
-      background-position:top left;}  
+/* FOND DE PAGE */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../css/img/surface-abstraite-et-textures-de-mur-de-pierre-de-beton-blanc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: darkblue;
+    min-height: 100vh;
+}
 
-h1{color:darkblue;
-   text-decoration: underline;
-   text-align: center;}
+/* HEADER */
+header {
+    background: rgba(255,255,255,0.85);
+    padding: 20px;
+}
 
-a{color:darkblue;
-   text-decoration: underline;
-   text-align: center;}   
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-img{width:350px;
-    height:350px;
-    margin:5px;
-    border:2px solid darkblue;
-    border-radius: 100px;}
+/* INTRO (si tu ajoutes un texte sous le titre) */
+.intro-realisations {
+    text-align: center;
+    font-size: 15px;
+}
 
-footer{
+/* GALERIE */
+.zoom-image {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.zoom-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 2px solid darkblue;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: white;
+}
+
+.zoom-image img:hover {
+    transform: scale(1.05);
+}
+
+/* BOUTON RETOUR */
+.btn-retour {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    background: darkblue;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-retour:hover {
+    background: #001f5c;
+}
+
+/* FOOTER */
+footer {
     background: darkblue;
     color: white;
     text-align: center;
     padding: 1rem;
-}   
+    margin-top: 30px;
+}
 
-/* Responsive */
-@media (max-width: 768px) {
-    .menu ul {
-        flex-direction: column;
-        align-items: center;
+footer a {
+    color: white;
+    display: block;
+    margin-top: 5px;
+}
+
+/* LIGHTBOX */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .zoom-image img {
+        height: 180px;
+    }
+
+    header {
+        padding: 15px;
     }
 }
