@@ -18,40 +18,31 @@ body {
 .header {
     background: #ffffff;
     border-bottom: 2px solid #eee;
-    padding: 1.5rem 1rem;
+    padding: 0.6rem 1rem;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 8px;
+    gap: 4px;
 }
 
 /* LOGO */
 .logo {
-    width: 80px;   /* ← règle ton problème de logo énorme */
+    width: 160px;   /* ← règle ton problème de logo énorme */
     height: auto;
-}
-
-/* TITRE */
-.header h1 {
-    font-size: 26px;
-}
-
-.header p {
-    font-size: 14px;
 }
 
 /* SOCIAL */
 .social-header {
     display: flex;
-    gap: 14px;
-    margin-top: 6px;
+    gap: 10px;
+    margin-top: 4px;
 }
 
 .social-header img {
-    width: 22px;
-    height: 22px;
+    width: 40px;
+    height: 40px;
     transition: 0.2s;
 }
 
@@ -62,13 +53,13 @@ body {
 
 /* TITRE */
 .header h1 {
-    margin-top: 10px;
-    font-size: 26px;
+    margin-top: 6px;
+    font-size: 24px;
 }
 
 .header p {
-    font-size: 14px;
-    margin-top: 4px;
+    font-size: 13px;
+    margin-top: 2px;
 }
 
 
@@ -232,12 +223,6 @@ footer a {
 /* ================= RESPONSIVE ================= */
 
 @media (max-width: 768px) {
-
-    .header-top {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .menu ul {
         flex-direction: column;
     }
