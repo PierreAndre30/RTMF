@@ -161,7 +161,7 @@ body {
     width: 40px;
     height: 40px;
     fill: #4a4a4a;
-    transition: 0.2s;
+    transition: fill 0.2s ease, transform 0.2s ease;
 }
 
 .social-header a:hover .social-icon {
@@ -227,11 +227,12 @@ section h2 {
     padding: 12px 22px;
     border-radius: 6px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background: #001f5c;
+    transform: translateY(-2px);
 }
 
 /* ================= PARTENAIRES ================= */
@@ -310,11 +311,12 @@ section h2 {
     padding: 12px;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .contact-form button:hover {
     background: #001f5c;
+    transform: translateY(-2px);    
 }
 
 /* ================= FOOTER ================= */
@@ -329,6 +331,11 @@ footer {
 footer a {
     color: white;
     margin-left: 10px;
+}
+
+footer small {
+    display: inline-block;
+    margin-top: 6px;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -351,12 +358,11 @@ footer a {
     .logo-droit {
         width: 50%;
         height: 100%;
-        opacity: 1;
+        opacity: 0.85;
         display: block;
         object-fit: cover;
-
-         -webkit-mask-image: none;
-    mask-image: none;   
+        -webkit-mask-image: none;
+        mask-image: none;   
     }
 
     .logo-gauche {
