@@ -26,8 +26,26 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-
     padding: 40px 20px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+        to right,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.35) 18%,
+        rgba(255,255,255,0.75) 30%,
+        rgba(255,255,255,1) 40%,
+        rgba(255,255,255,1) 60%,
+        rgba(255,255,255,0.75) 70%,
+        rgba(255,255,255,0.35) 82%,
+        rgba(255,255,255,0) 100%
+    );
 }
 
 /* Images latérales */
@@ -39,7 +57,7 @@ body {
     width: 50%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
+    z-index: 0;
     pointer-events: none;
 }
 
@@ -334,6 +352,7 @@ footer a {
         width: 50%;
         height: 100%;
         opacity: 0.07;
+        display: block;
     }
 
     .logo-gauche {
@@ -344,7 +363,6 @@ footer a {
     .logo-droit {
         right: 0;
         object-position: right center;
-        display: block;
     }
 
     .logo {
