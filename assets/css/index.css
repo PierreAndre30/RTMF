@@ -325,40 +325,42 @@ footer a {
     }
 
     .header {
-        min-height: 480px;
-        padding: 30px 15px;
+        min-height: 420px;
+        padding: 24px 15px;
     }
 
     .logo-gauche,
     .logo-droit {
-        width: 100%;
-        opacity: 0.18;
-        object-position: center;
+        width: 50%;
+        height: 100%;
+        opacity: 0.10;
+    }
+
+    .logo-gauche {
+        left: 0;
+        object-position: left center;
     }
 
     .logo-droit {
-        display: none;
+        right: 0;
+        object-position: right center;
+        display: block;
     }
 
     .logo {
-        width: 115px;
+        width: 110px;
     }
 
     .header h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .header p {
-        font-size: 17px;
-    }
-
-    .social-header a {
-        width: 46px;
-        height: 46px;
+        font-size: 16px;
     }
 
     .social-icon {
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
     }
 }
