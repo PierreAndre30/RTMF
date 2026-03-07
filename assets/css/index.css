@@ -88,7 +88,7 @@ body {
 
 .logo-droit {
     right: 0;
-    object-position: right center;
+    object-position: 70% center;
 
     -webkit-mask-image: linear-gradient(
         to left,
