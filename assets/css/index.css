@@ -354,6 +354,9 @@ footer a {
         opacity: 1;
         display: block;
         object-fit: cover;
+
+         -webkit-mask-image: none;
+    mask-image: none;   
     }
 
     .logo-gauche {
