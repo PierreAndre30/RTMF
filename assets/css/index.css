@@ -366,7 +366,7 @@ footer a {
 
     .logo-droit {
         right: 0;
-        object-position: right center;
+        object-position: 75% center;
     }
 
     .logo {
